@@ -122,3 +122,8 @@ function startRead() {
       // The file could not be read
     }
   }
+
+//Funcionalidad Parallax
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
