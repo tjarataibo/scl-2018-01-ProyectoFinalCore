@@ -33,7 +33,7 @@ formulario.addEventListener('submit', e =>  {
                contrasena: contrasena 
             })
             console.log('Registro exitoso');
-            location.href ="../Despedida/despedida.html";
+            location.href ="../Alerta/alerta.html";
         })
        // location.href = '../login/login.html';
     }
