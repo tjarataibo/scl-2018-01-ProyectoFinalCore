@@ -25,7 +25,7 @@ formulario.addEventListener('submit', e =>  {
         firebase.auth().createUserWithEmailAndPassword(correo, contrasena)
         .then(Response => {
             const userId = Response.user.uid;
-            firebase.database().ref('users/' + userId).set( {
+            firebase.database().ref("users/" + userId).set( {
                nombreApellido: nombreApellido,
                rut: rut,
                telefono: telefono,
