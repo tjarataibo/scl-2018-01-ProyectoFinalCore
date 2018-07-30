@@ -6,7 +6,7 @@ button.addEventListener("click", function(){
 
 function notify(){
 let properties = {
-    body: "Tienes un nue vo mensaje",
+    body: "Tienes un nuevo mensaje",
     icon: "icononotificacionesj1.png"
 }
 
