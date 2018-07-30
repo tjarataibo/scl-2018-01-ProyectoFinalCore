@@ -21,7 +21,7 @@ let properties = {
                let notificacion = new Notification("Tienes una nueva visita, ¿deseas recibirla?", properties);
                notificacion.onclick = (ev)=>{
                    ev.preventDefault();
-                   window.open(`https://www.instagram.com`);
+                   window.open(`http://www.elestudio.cl`);
                }
            }
         });
