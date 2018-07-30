@@ -33,7 +33,7 @@ formulario.addEventListener('submit', e =>  {
                contrasena: contrasena 
             })
             console.log('Registro exitoso');
-            location.href ="../Alerta/alert.html";
+            location.href ="../Alerta/alerta.html";
         })
        // location.href = '../login/login.html';
     }
@@ -43,5 +43,10 @@ function paraIrALogin() {
     location.href = '../login/login.html';
 }
 
-let fecha = new Date();
-console.log(fecha.getTime());
+
+function getTime() {
+let fecha = new Date(); 
+let fecha2 = fecha.getDay()+" "+fecha.getDate()+" /"+fecha.getMonth()+" /"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes();
+return(fecha2);
+
+}
