@@ -68,90 +68,58 @@ formulario.addEventListener('submit', e =>  {
 //     location.href ="../Despedida/despedida.html";;
 
 
-
-//Funcionalidad cámara
-// function startRead() {
-//     // obtain input element through DOM
-  
-//     var file = document.getElementById('file').files[0];
-//     if(file){
-//       getAsText(file);
-//     }
-//   }
-  
-//   function getAsText(readFile) {
-  
-//     var reader = new FileReader();
-  
-//     // Read file into memory as UTF-16
-//     reader.readAsText(readFile, "UTF-16");
-  
-//     // Handle progress, success, and errors
-//     reader.onprogress = updateProgress;
-//     reader.onload = loaded;
-//     reader.onerror = errorHandler;
-//   }
-  
-//   function updateProgress(evt) {
-//     if (evt.lengthComputable) {
-//       // evt.loaded and evt.total are ProgressEvent properties
-//       var loaded = (evt.loaded / evt.total);
-//       if (loaded < 1) {
-//         // Increase the prog bar length
-//         // style.width = (loaded * 200) + "px";
-//       }
-//     }
-//   }
-  
-//   function loaded(evt) {
-//     // Obtain the read file data
-//     var fileString = evt.target.result;
-//     // Handle UTF-16 file dump
-//     if(utils.regexp.isChinese(fileString)) {
-//       //Chinese Characters + Name validation
-//     }
-//     else {
-//       // run other charset test
-//     }
-//     // xhr.send(fileString)
-//   }
-  
-//   function errorHandler(evt) {
-//     if(evt.target.error.name == "NotReadableError") {
-//       // The file could not be read
-//     }
-//   }
-
 //Funcionalidad Parallax
 $(document).ready(function(){
   $('.parallax').parallax();
 });
 
 //Funcionalidad cámara
-navigator.getUserMedia = ( navigator.getUserMedia ||
-  navigator.webkitGetUserMedia ||
-  navigator.mozGetUserMedia ||
-  navigator.msGetUserMedia);
+// navigator.getUserMedia = ( navigator.getUserMedia ||
+//   navigator.webkitGetUserMedia ||
+//   navigator.mozGetUserMedia ||
+//   navigator.msGetUserMedia);
 
-navigator.getUserMedia (
+// navigator.getUserMedia (
 
-// constraints
-{
-video: true,
-audio: false
-},
+// // constraints
+// {
+// video: true,
+// audio: false
+// },
 
-// successCallback
-function(localMediaStream) {
-var video = document.querySelector(video);
-video.src = window.URL.createObjectURL(localMediaStream);
-},
+// // successCallback
+// function(localMediaStream) {
+// var video = document.querySelector(video);
+// video.src = window.URL.createObjectURL(localMediaStream);
+// },
 
-// errorCallback
-function(err) {
-console.log("Ocurrió el siguiente error: " + err);
+// // errorCallback
+// function(err) {
+// console.log("Ocurrió el siguiente error: " + err);
+// }
+
+// );
+
+//Funcionalidad cámara
+function sedPhotoToStorage(){
+  const photoFile = photoFileSelector.files[0];
+  const fileName = photoFile.name;
+  const metadata = {
+      contentType : photoFile.type
+  }; 
+
+  const task = firebase.storage().ref('imagesPost')
+      .child(fileName)
+      .put(photoFile, metadata);
+
+  task.then(snapshot => snapshot.ref.getDownloadURL())
+      .then(url => {
+            console.log("URL del archivo > "+url);
+            const currentUsers = firebase.auth().currentUser;
+            cont.innerHTML += `
+            <img style="width: 25%; display: flex" src="${currentUsers.photoURL}">
+            <p> ${currentUsers.diplayName}</p>
+            <img style="width: 200px; display: flex" src="${url}">
+            `;
+       });
 }
-
-);
-
-  
