@@ -100,7 +100,24 @@
 <!--Segunda imagen de fondo-->
 <div class="parallax"><img src="https://i.imgur.com/Afair8s.jpg"></div>
 </div>
+<div class="content"></div>
+<form id="add-data"></form>
+<ul id="data-list"></ul>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCN56nwJ-HRhJNQsXaquVsNgFLIAU_cQ_0",
+        authDomain: "proyecto-final-8b8d1.firebaseapp.com",
+        databaseURL: "https://proyecto-final-8b8d1.firebaseio.com",
+        projectId: "proyecto-final-8b8d1",
+        storageBucket: "proyecto-final-8b8d1.appspot.com",
+        messagingSenderId: "608555465261"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapShots: true });
 
+</script>
         
     <!-- Link Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

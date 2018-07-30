@@ -44,74 +44,22 @@ function paraIrALogin() {
 }
 
 
-function getTime() {
+//codigo que hace posible ver la data en la consola y llevar a objeto
+db.collection('proyecto final').get().then((snapshot) => {
+    //console.log(snapshot.docs);
+    snapshot.docs.forEach(doc => {
+        console.log(doc.data())
+    
+    });
+})
+
+/*function getTime() {
 let fecha = new Date(); 
 let fecha2 = fecha.getDay()+" "+fecha.getDate()+" /"+fecha.getMonth()+" /"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes();
 return(fecha2);
 
-<<<<<<< HEAD
-}
-=======
-//alert("Usuario registrado, inicia sesión");
-// var iniciarSesion = iniciarSesion("Estás a punto de comenzar la trivia, ¿Quieres comenzar?");
-// else (nombreApellido.length != 0 && rut.length != 0 && telefono.length != 0
-//     && correo.length != 0 && contrasena.length != 0) {
-//     location.href ="../Despedida/despedida.html";;
+}*/
 
 
-//Funcionalidad Parallax
-$(document).ready(function(){
-  $('.parallax').parallax();
-});
 
-//Funcionalidad cámara
-// navigator.getUserMedia = ( navigator.getUserMedia ||
-//   navigator.webkitGetUserMedia ||
-//   navigator.mozGetUserMedia ||
-//   navigator.msGetUserMedia);
 
-// navigator.getUserMedia (
-
-// // constraints
-// {
-// video: true,
-// audio: false
-// },
-
-// // successCallback
-// function(localMediaStream) {
-// var video = document.querySelector(video);
-// video.src = window.URL.createObjectURL(localMediaStream);
-// },
-
-// // errorCallback
-// function(err) {
-// console.log("Ocurrió el siguiente error: " + err);
-// }
-
-// );
-
-//Funcionalidad cámara
-// function sedPhotoToStorage(){
-//   const photoFile = photoFileSelector.files[0];
-//   const fileName = photoFile.name;
-//   const metadata = {
-//       contentType : photoFile.type
-//   }; 
-
-//   const task = firebase.storage().ref('imagesPost')
-//       .child(fileName)
-//       .put(photoFile, metadata);
-
-//   task.then(snapshot => snapshot.ref.getDownloadURL())
-//       .then(url => {
-//             console.log("URL del archivo > "+url);
-//             const currentUsers = firebase.auth().currentUser;
-//             cont.innerHTML += `
-//             <img style="width: 25%; display: flex" src="${currentUsers.photoURL}">
-//             <p> ${currentUsers.diplayName}</p>
-//             <img style="width: 200px; display: flex" src="${url}">
-//             `;
-//        });
-// }
->>>>>>> 73e95dee2e9dfac2134f60955aad36034dc9c2bb
