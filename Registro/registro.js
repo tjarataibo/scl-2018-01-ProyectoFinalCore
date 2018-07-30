@@ -12,7 +12,16 @@ formulario.addEventListener('submit', e =>  {
     const contrasena = document.getElementById('contrasena').value;
     if(nombreApellido.length != 0 && rut.length != 0 && telefono.length != 0
     && correo.length != 0 && contrasena.length != 0) {
-        console.log('if')
+        console.log('Usuario ya existente')
+
+        //  else (nombreApellido.length != 0 && rut.length != 0 && telefono.length != 0
+        //         && correo.length != 0 && contrasena.length != 0) {
+        //     alert("Usuario ya existente");
+        //             var confirmar = confirm("Estás a punto de comenzar la trivia, ¿Quieres comenzar?.");
+        //             if (confirmar)
+        //             location.href ="../Despedida/despedida.html";;
+
+
         firebase.auth().createUserWithEmailAndPassword(correo, contrasena)
         .then(Response => {
             const userId = Response.user.uid;
@@ -23,8 +32,8 @@ formulario.addEventListener('submit', e =>  {
                correo: correo,
                contrasena: contrasena 
             })
-            console.log('ya envié los datos');
-            
+            console.log('Registro exitoso');
+            location.href ="../Alerta/alert.html";
         })
        // location.href = '../login/login.html';
     }
@@ -34,3 +43,5 @@ function paraIrALogin() {
     location.href = '../login/login.html';
 }
 
+let fecha = new Date();
+console.log(fecha.getTime());
