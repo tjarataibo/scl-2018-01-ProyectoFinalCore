@@ -66,3 +66,6 @@ formulario.addEventListener('submit', e =>  {
 // else (nombreApellido.length != 0 && rut.length != 0 && telefono.length != 0
 //     && correo.length != 0 && contrasena.length != 0) {
 //     location.href ="../Despedida/despedida.html";;
+
+
+
