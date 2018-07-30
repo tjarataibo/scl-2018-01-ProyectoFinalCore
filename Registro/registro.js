@@ -33,3 +33,4 @@ formulario.addEventListener('submit', e =>  {
 function paraIrALogin() {
     location.href = '../login/login.html';
 }
+
