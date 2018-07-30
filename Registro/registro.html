@@ -80,8 +80,18 @@
                 </form>
             </div>
         </section>
-
-        <input type="file" accept="image/*" capture="camera">
+       
+            <div class="d-flex justify-content-center contentarea">
+                <div class="camera">
+                    <video id="video"></video>
+                    <button class="btn btn-outline-dark" id="startbutton">Tomar Foto</button>
+                  
+                </div>
+                <canvas id="canvas"></canvas>
+                <div class="output">
+                    <img id="photo" alt=".">
+                </div>
+            </div>
 
     </div>
 </div>
