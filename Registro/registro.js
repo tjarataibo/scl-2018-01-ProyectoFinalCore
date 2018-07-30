@@ -1,6 +1,6 @@
 //Registro
 
-var db = firebase.firestore();
+/* var db = firebase.firestore();
 const formulario = document.getElementById('formulario');
 
 formulario.addEventListener('submit', e =>  {
@@ -37,7 +37,7 @@ formulario.addEventListener('submit', e =>  {
         })
        // location.href = '../login/login.html';
     }
-});
+}); */
 
 // function paraIrAdespedida() {
 //         // preventDefault() detiene el evento, en este caso el envio no ocurre.
@@ -101,25 +101,25 @@ $(document).ready(function(){
 // );
 
 //Funcionalidad cámara
-function sedPhotoToStorage(){
-  const photoFile = photoFileSelector.files[0];
-  const fileName = photoFile.name;
-  const metadata = {
-      contentType : photoFile.type
-  }; 
+// function sedPhotoToStorage(){
+//   const photoFile = photoFileSelector.files[0];
+//   const fileName = photoFile.name;
+//   const metadata = {
+//       contentType : photoFile.type
+//   }; 
 
-  const task = firebase.storage().ref('imagesPost')
-      .child(fileName)
-      .put(photoFile, metadata);
+//   const task = firebase.storage().ref('imagesPost')
+//       .child(fileName)
+//       .put(photoFile, metadata);
 
-  task.then(snapshot => snapshot.ref.getDownloadURL())
-      .then(url => {
-            console.log("URL del archivo > "+url);
-            const currentUsers = firebase.auth().currentUser;
-            cont.innerHTML += `
-            <img style="width: 25%; display: flex" src="${currentUsers.photoURL}">
-            <p> ${currentUsers.diplayName}</p>
-            <img style="width: 200px; display: flex" src="${url}">
-            `;
-       });
-}
+//   task.then(snapshot => snapshot.ref.getDownloadURL())
+//       .then(url => {
+//             console.log("URL del archivo > "+url);
+//             const currentUsers = firebase.auth().currentUser;
+//             cont.innerHTML += `
+//             <img style="width: 25%; display: flex" src="${currentUsers.photoURL}">
+//             <p> ${currentUsers.diplayName}</p>
+//             <img style="width: 200px; display: flex" src="${url}">
+//             `;
+//        });
+// }
