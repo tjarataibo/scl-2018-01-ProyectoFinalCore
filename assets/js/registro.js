@@ -1,4 +1,4 @@
-//Registro
+/* //Registro
 
 const dataList = document.querySelector('#data-list');
 const form = document.querySelector('#formulario');
@@ -229,11 +229,46 @@ function hideUI() {
     snap.classList.remove("visible");
     error_message.classList.remove("visible");
 }
+ */
 
 
 
 
+ar db = firebase.firestore();
+const formulario = document.getElementById('formulario');
 
+formulario.addEventListener('submit', e =>  {
+    e.preventDefault();
+    const nombreApellido = document.getElementById('nameLastname').value;
+    const cedula = document.getElementById('di').value;
+    const telefono = document.getElementById('phone').value;
+    const patente = document.getElementById('placa').value;
+    const correo = document.getElementById('email').value;
+    const contraseña = document.getElementById('contrasena').value;
+    if(nombreApellido.length != 0 && cedula.length != 0 && telefono.length != 0
+    && patente.length != 0 && correo.length != 0 && contraseña.length != 0) {
+        console.log('if')
+        firebase.auth().createUserWithEmailAndPassword(correo, contrasena)
+        .then(Response => {
+            const userId = Response.user.uid;
+            firebase.database().ref('users/' + userId).set( {
+               Nombre: nombreApellido,
+               Rut: cedula,
+               Telefono: telefono,
+               Patente: patente,
+               Correo: correo 
+               Contraseña: contraseña 
+            })
+            console.log('ya envie los datos');
+            
+        })
+       // location.href = '../login/login.html';
+    }
+});
+
+function paraIrALogin() {
+    location.href = '../Login/login.html';
+}
 
 
 
