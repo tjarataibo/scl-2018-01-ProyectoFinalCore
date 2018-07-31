@@ -11,9 +11,14 @@ En ésta, se despliega un ingreso que permite, luego de la identificación, pode
 A continuación, se muestra el proceso de diseño de [Identity](https://tjarataibo.github.io/scl-2018-01-ProyectoFinalCore/splash/splash.html), cómo se descubrieron las necesidades de los usuarios y cómo se llegó a la definición final del producto:
 
   * Interfaces visuales:
-    * [Planning](link)
+    * [Planning](https://trello.com/b/q5QYITbc/registrador-electr%C3%B3nico)
     * [Prototipo de baja fidelidad](link)
+<<<<<<< HEAD
     * [Prototipo de alta fidelidad](link)
     * [Entrevistas](https://drive.google.com/drive/u/1/folders/1LAIx63C2eO-OUm6Ds6kNUZM0BmU2kGIO)
+=======
+    * [Prototipo de alta fidelidad](https://marvelapp.com/33744af/screen/46245941)
+    * [Entrevistas](link)
+>>>>>>> 42aee9aed15f0448f812edd3bb7e3275a6c67bb9
     * [Test de usabilidad](link)
 
