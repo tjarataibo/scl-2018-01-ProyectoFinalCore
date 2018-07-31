@@ -6,11 +6,11 @@ function manejarSubmit(evento) {
     // preventDefault() detiene el evento, en este caso el envio no ocurre.
     evento.preventDefault();
     const correo = document.getElementById('correoElectronico').value;
-    const contrasena = document.getElementById('contraseña').value;
+    const contrasena = document.getElementById('contrasena').value;
     if(correo.length != 0 && contrasena.length != 0) {
         firebase.auth().signInWithEmailAndPassword(correo, contrasena)
-        .then((respondse)=> {
-          location.href ="../despedida/despedida.html";
+        .then(response => {
+          location.href ="../inicio.html";
         })
         .catch(function(error) {
             let errorCode = error.code;
