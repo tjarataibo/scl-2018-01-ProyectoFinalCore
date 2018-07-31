@@ -30,6 +30,6 @@ let properties = {
 }
 
 //Funcionalidad Parallax
-$(document).ready(function(){
-    $('.parallax').parallax();
-  });
+// $(document).ready(function(){
+//     $('.parallax').parallax();
+//   });
