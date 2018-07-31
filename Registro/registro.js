@@ -37,7 +37,7 @@ formulario.addEventListener('submit', e =>  {
         })
        // location.href = '../login/login.html';
     }
-}); */
+}); 
 
 // function paraIrAdespedida() {
 //         // preventDefault() detiene el evento, en este caso el envio no ocurre.
