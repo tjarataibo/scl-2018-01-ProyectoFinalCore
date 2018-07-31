@@ -8,7 +8,7 @@
     function frame(){
      if(loading == 100) {
       clearInterval(id);
-      window.open("inicio.html", "_self");
+      window.open("../scl-2018-01-ProyectoFinalCore/inicio.html", "_self");
      }
      else {
       loading = loading + 1;

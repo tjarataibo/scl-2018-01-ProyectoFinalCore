@@ -1,6 +1,6 @@
-/* //Registro
+//Registro
 
-const dataList = document.querySelector('#data-list');
+
 const form = document.querySelector('#formulario');
 
 
