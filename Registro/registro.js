@@ -62,7 +62,9 @@ form.addEventListener('submit', (e) => {
     form.patente.value = '';
     })  
    
-
+function paraIrALogin() {
+    location.href = "../Alerta/alerta.html"
+}
 
    
 
