@@ -267,7 +267,7 @@ formulario.addEventListener('submit', e =>  {
 });
 
 function paraIrALogin() {
-    location.href = '../Login/login.html';
+    location.href = "../scl-2018-01-ProyectoFinalCore/alerta.html";
 }
 
 
