@@ -1,6 +1,6 @@
 /*let button = document.getElementById("button");
 
-button.addEventListener("click", function(){
+/*button.addEventListener("click", function(){
     notify();
 });
 
@@ -27,7 +27,7 @@ let properties = {
         });
     }
 
-}
+}*/
 
 //Funcionalidad Parallax
 $(document).ready(function(){
