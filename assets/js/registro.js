@@ -1,4 +1,4 @@
-//Registro
+/* //Registro
 
 const dataList = document.querySelector('#data-list');
 const form = document.querySelector('#formulario');
@@ -36,5 +36,4 @@ form.addEventListener('submit', (e) => {
 function paraIrALogin() {
     location.href = "alerta.html"
 }
-
 
