@@ -23,16 +23,20 @@ form.addEventListener('submit', (e) => {
         rut: form.rut.value,
         telefono: form.tlf.value,
         patente: form.patente.value
-
-
     })
+    
     // para mantener limpio los input luego de haber enviado los datos
     form.nombre.value = '';
     form.email.value = '';
     form.rut.value = '';
     form.tlf.value = '';
     form.patente.value = '';
-})
+    })  
+   
+function paraIrALogin() {
+    location.href = "alerta.html"
+}
+
 
 let video = document.querySelector('#camera-stream'),
     image = document.querySelector('#snap'),

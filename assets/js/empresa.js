@@ -10,7 +10,7 @@ function manejarSubmit(evento) {
     if(correo.length != 0 && contrasena.length != 0) {
         firebase.auth().signInWithEmailAndPassword(correo, contrasena)
         .then((respondse)=> {
-          location.href ="../despedida/despedida.html";
+          location.href ="inicio.html";
         })
         .catch(function(error) {
             let errorCode = error.code;
