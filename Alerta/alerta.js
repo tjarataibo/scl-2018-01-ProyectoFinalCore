@@ -1,4 +1,4 @@
-let button = document.getElementById("button");
+/*let button = document.getElementById("button");
 
 button.addEventListener("click", function(){
     notify();
@@ -32,4 +32,4 @@ let properties = {
 //Funcionalidad Parallax
 $(document).ready(function(){
     $('.parallax').parallax();
-  });
+  }); */
