@@ -70,7 +70,33 @@
 <div class="content"></div>
 <form id="add-data"></form>
 <ul id="data-list"></ul>
+        <div class="container">
         
+            <div class="app">
+        
+                <a href="#" id="start-camera" class="visible">Iniciar Demo</a>
+                <video id="camera-stream"></video>
+                <img id="snap">
+        
+                <p id="error-message"></p>
+        
+                <div class="controls">
+                    <a href="#" id="delete-photo" title="Eliminar Foto" class="disabled">
+                        <i class="material-icons">delete</i>
+                    </a>
+                    <a href="#" id="take-photo" title="Tomar Foto">
+                        <i class="material-icons">camera_alt</i>
+                    </a>
+                    <a href="#" id="download-photo" download="foto.jpg" title="Descargar Foto" class="disabled">
+                        <i class="material-icons">file_download</i>
+                    </a>
+                </div>
+        
+                <canvas></canvas>
+        
+            </div>
+        
+        </div>
     <!-- Link Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Link Materialize para JavaScript -->
@@ -91,7 +117,6 @@
             db.settings({ timestampsInSnapShots: true });
         
     </script>
-    
     <script src="../scl-2018-01-ProyectoFinalCore/assets/js/registro.js"></script>
 </body>
 
