@@ -46,32 +46,32 @@
                 <form class="col s12" id="formulario">
                         <div class="row">
                             <div class="input-field col s6 cyan lighten-5">
-                                <input placeholder="Nombre y Apellido" id="nameLastname" type="text" class="validate" style="font-size: 28px;">
+                                <input   name="nombre"placeholder="Nombre y Apellido" id="nameLastname" type="text" class="validate" style="font-size: 28px;">
                                 <label for="first_name"></label>
                             </div>
                         </div>
                     <div class="row">
                         <div class="input-field col s6 cyan lighten-5">
-                            <input placeholder="Cédula de identidad" id="di" type="text" class="validate" style="font-size: 28px;">
+                            <input name="rut" placeholder="Cédula de identidad" id="di" type="text" class="validate" style="font-size: 28px;">
                             <label for="first_name"></label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s6 cyan lighten-5">
-                            <input placeholder="Teléfono (ej: 912345678)" id="phone" type="text" class="validate" style="font-size: 28px;">
+                            <input name="tlf" placeholder="Teléfono (ej: 912345678)" id="phone" type="text" class="validate" style="font-size: 28px;">
                             <label for="last_name"></label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s6 cyan lighten-5">
-                            <input placeholder="Email" id="correo" type="email" class="validate" style="font-size: 28px;">
+                            <input name="email" placeholder="Email" id="correo" type="email" class="validate" style="font-size: 28px;">
                             <label for="email"></label>
                         </div>
                     </div>
                     <div class="row">
                             <div class="input-field col s6 cyan lighten-5">
-                                <input placeholder="Contraseña" id="contrasena" type="password" class="validate" style="font-size: 28px;">
-                                <label for="password"></label>
+                                <input name="patente" placeholder="Placa patente" id="contrasena" type="text" class="validate" style="font-size: 28px;">
+                                <label for="patente"></label>
                             </div>
                     </div>
                     <button class="btn deep-purple-effect deep-purple lighten-3" type="submit" name="action">Enviar Registro
@@ -88,7 +88,24 @@
 <!--Segunda imagen de fondo-->
 <div class="parallax"><img src="https://i.imgur.com/Afair8s.jpg"></div>
 </div>
+<div class="content"></div>
+<form id="add-data"></form>
+<ul id="data-list"></ul>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCN56nwJ-HRhJNQsXaquVsNgFLIAU_cQ_0",
+        authDomain: "proyecto-final-8b8d1.firebaseapp.com",
+        databaseURL: "https://proyecto-final-8b8d1.firebaseio.com",
+        projectId: "proyecto-final-8b8d1",
+        storageBucket: "proyecto-final-8b8d1.appspot.com",
+        messagingSenderId: "608555465261"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapShots: true });
 
+</script>
         
     <!-- Link Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
