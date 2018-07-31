@@ -37,6 +37,44 @@ function paraIrALogin() {
     location.href = "alerta.html"
 }
 
+   
+// Funcion para mandar mails
+
+(function(){
+    emailjs.init("user_lw0PCIJps1KFwrFZ3V8Wq");
+ })();
+const vue = new Vue({
+    el: '#app',
+    data(){
+        return {
+            from_name: '',
+            from_email: '',
+            message: '',
+            subject: "Visita rut " + '',
+        }
+    },
+    methods: {
+        enviar(){
+            let data = {
+                from_name: this.from_name,
+                from_email: this.from_email,
+                message: this.message,
+                subject: this.subject,
+            };
+            
+            emailjs.send("gmail","identity", data)
+            .then(function(response) {
+                if(response.text === 'OK'){
+                    alert('El correo se ha enviado de forma exitosa');
+                }
+               console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+            }, function(err) {
+                alert('Ocurrió un problema al enviar el correo');
+               console.log("FAILED. error=", err);
+            });
+        }
+    }
+});
 
 let video = document.querySelector('#camera-stream'),
     image = document.querySelector('#snap'),
@@ -229,7 +267,7 @@ formulario.addEventListener('submit', e =>  {
 });
 
 function paraIrALogin() {
-    location.href = '../Login/login.html';
+    location.href = "../scl-2018-01-ProyectoFinalCore/alerta.html";
 }
 
 
