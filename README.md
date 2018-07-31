@@ -14,6 +14,6 @@ A continuación, se muestra el proceso de diseño de [Identity](https://tjaratai
     * [Planning](link)
     * [Prototipo de baja fidelidad](link)
     * [Prototipo de alta fidelidad](link)
-    * [Entrevistas](link)
+    * [Entrevistas](https://drive.google.com/drive/u/1/folders/1LAIx63C2eO-OUm6Ds6kNUZM0BmU2kGIO)
     * [Test de usabilidad](link)
 
