@@ -23,16 +23,6 @@
         <input id="logout" onclick="logoutWithFirebase()" type="button" value="LOGOUT">
     </div> -->
 
-    <div class="parallax-container">
-        </nav>
-                        
-        <!--Primera imagen de fondo-->
-                        <div class="parallax"><img src="https://i.imgur.com/weYJRwE.jpg"></div>
-                      </div>
-        <!--Menú-->
-                      <div class="section white">
-
-
     <header class="container center" id="titulo">
             <div class="row">
                 <div class="input-field col s12">
@@ -83,29 +73,10 @@
 
     </div>
 </div>
-</div>
-<div class="parallax-container">
-<!--Segunda imagen de fondo-->
-<div class="parallax"><img src="https://i.imgur.com/Afair8s.jpg"></div>
-</div>
+
 <div class="content"></div>
 <form id="add-data"></form>
 <ul id="data-list"></ul>
-<script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyCN56nwJ-HRhJNQsXaquVsNgFLIAU_cQ_0",
-        authDomain: "proyecto-final-8b8d1.firebaseapp.com",
-        databaseURL: "https://proyecto-final-8b8d1.firebaseio.com",
-        projectId: "proyecto-final-8b8d1",
-        storageBucket: "proyecto-final-8b8d1.appspot.com",
-        messagingSenderId: "608555465261"
-    };
-    firebase.initializeApp(config);
-    const db = firebase.firestore();
-    db.settings({ timestampsInSnapShots: true });
-
-</script>
         
     <!-- Link Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -114,16 +85,19 @@
     <!-- Link para firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
     <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyCN56nwJ-HRhJNQsXaquVsNgFLIAU_cQ_0",
-        authDomain: "proyecto-final-8b8d1.firebaseapp.com",
-        databaseURL: "https://proyecto-final-8b8d1.firebaseio.com",
-        projectId: "proyecto-final-8b8d1",
-        storageBucket: "proyecto-final-8b8d1.appspot.com",
-        messagingSenderId: "608555465261"
-      };
-      firebase.initializeApp(config);
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCN56nwJ-HRhJNQsXaquVsNgFLIAU_cQ_0",
+                authDomain: "proyecto-final-8b8d1.firebaseapp.com",
+                databaseURL: "https://proyecto-final-8b8d1.firebaseio.com",
+                projectId: "proyecto-final-8b8d1",
+                storageBucket: "proyecto-final-8b8d1.appspot.com",
+                messagingSenderId: "608555465261"
+            };
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapShots: true });
+        
     </script>
     
     <script src="registro.js"></script>
