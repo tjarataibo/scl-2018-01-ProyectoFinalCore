@@ -66,7 +66,7 @@ form.addEventListener('submit', (e) => {
 
 
 function paraIrALogin() {
-    location.href = '../login/login.html';
+    location.href = '../Alerta/alerta.html';
 }
 
 
