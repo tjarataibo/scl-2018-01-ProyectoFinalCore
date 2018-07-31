@@ -12,10 +12,9 @@ A continuación, se muestra el proceso de diseño de [Identity](https://tjaratai
 
   * Interfaces visuales:
     * [Planning](https://trello.com/b/q5QYITbc/registrador-electr%C3%B3nico)
-    * [Prototipo de baja fidelidad](link)
-    * [Prototipo de alta fidelidad](link)
-    * [Entrevistas](https://drive.google.com/drive/u/1/folders/1LAIx63C2eO-OUm6Ds6kNUZM0BmU2kGIO
+    * [Prototipo de baja fidelidad](https://imgur.com/a/D4gxlfq)
     * [Prototipo de alta fidelidad](https://marvelapp.com/33744af/screen/46245941)
-    * [Entrevistas](link)
+    * [Guía de entrevista](link)
+    * [Entrevistas](https://drive.google.com/drive/u/1/folders/1LAIx63C2eO-OUm6Ds6kNUZM0BmU2kGIO)
     * [Test de usabilidad](link)
 
