@@ -8,7 +8,7 @@ En ésta, se despliega un ingreso que permite, luego de la identificación, pode
 
 ## UX
 
-A continuación, se muestra el proceso de diseño de [Identity](https://tjarataibo.github.io/scl-2018-01-ProyectoFinalCore/splash/splash.html), cómo se descubrieron las necesidades de los usuarios y cómo se llegó a la definición final del producto:
+A continuación, se muestra el proceso de diseño de [Identity](https://tjarataibo.github.io/scl-2018-01-ProyectoFinalCore/splash.html), cómo se descubrieron las necesidades de los usuarios y cómo se llegó a la definición final del producto:
 
   * Interfaces visuales:
     * [Planning](https://trello.com/b/q5QYITbc/registrador-electr%C3%B3nico)
