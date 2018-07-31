@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../scl-2018-01-ProyectoFinalCore/assets/css/empresa.css">
+     <!-- Link Materialize para css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Link para íconos -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Link Google Fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.css" />
+     <title>Ingreso Empresas</title>
+</head>
+<body>
+    <!--Login-->
+    <header class="container center" id="titulo">
+        <div class="row">
+            <div class="input-field col s12">
+                <h3><strong>Ingreso Recepción</strong></h3>
+            </div>
+        </div>   
+    </header>
+    <section class="container">
+        <form id="formularioLogin" action="#">
+            <div class="row">
+                <div class="input-field col s6 blue-grey lighten-1">
+                    <input placeholder="Correo" id="emailLogin" type="email" class="validate" style="font-size: 28px;">
+                    <label for="email"></label>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="input-field col s6 blue-grey lighten-1">
+                        <input placeholder="Contraseña" id="passwordLogin" type="password" class="validate" style="font-size: 28px;">
+                        <label for="password"></label>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                                <button class="btn blue-grey-effect black" type="submit" name="action">Ingresar
+                                    <i class="material-icons right">send</i>
+                                </button>
+                    </div>
+                </div>
+            </form>   
+    </section>
+    <!-- Link Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Link Materialize para JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!-- Link para firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCN56nwJ-HRhJNQsXaquVsNgFLIAU_cQ_0",
+        authDomain: "proyecto-final-8b8d1.firebaseapp.com",
+        databaseURL: "https://proyecto-final-8b8d1.firebaseio.com",
+        projectId: "proyecto-final-8b8d1",
+        storageBucket: "proyecto-final-8b8d1.appspot.com",
+        messagingSenderId: "608555465261"
+      };
+      firebase.initializeApp(config);
+    </script>
+   
+    
+    <script src="../scl-2018-01-ProyectoFinalCore/assets/js/login.js"></script>
+</body>
+
+</html>
