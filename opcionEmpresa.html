@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../scl-2018-01-ProyectoFinalCore/assets/css/opcionEmpresa.css">
+     <!-- Link Materialize para css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Link para íconos -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Link Google Fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.css" />
+     <title>Ingreso Empresas</title>
+</head>
+<body>
+        <div class="parallax-container">
+
+             <!--Primera imagen de fondo-->
+             <div class="parallax"><img src="https://i.imgur.com/weYJRwE.jpg"></div>
+            </div>
+            <!--Menú-->
+            <div class="section white">
+              <div class="row containerOne center">
+        <header class="container center" id="titulo">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <h3 style="font-family: 'Bitter', serif;"><strong>Si estás registrado, ingresa</strong></h3>
+                    </div>
+                </div>   
+            </header>
+            <div class="row containerOne center">
+                    <a class="waves-effect waves-light btn-large black center" href="../scl-2018-01-ProyectoFinalCore/ingresoEmpresa.html"><i class="material-icons left">person</i>INGRESO EMPRESA</a>
+               </div>
+   
+
+            <header class="container center" id="titulo">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <h3 style="font-family: 'Bitter', serif;"><strong>Si no lo estás, regístrate</strong></h3>
+                        </div>
+                    </div>   
+                </header>
+                <div class="row containerTwo center">
+                        <a class="waves-effect waves-light btn-large black" href="../scl-2018-01-ProyectoFinalCore/registroEmpresa.html"><i class="material-icons left">chrome_reader_mode</i>REGISTRO EMPRESA</a>
+                   </div>
+            </div>
+        </div>
+      </div>
+
+                <div class="parallax-container">
+                        <!--Segunda imagen de fondo-->
+                                        <div class="parallax"><img src="https://i.imgur.com/Afair8s.jpg"></div>
+                                      </div>
+                        
+    <!-- Link Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Link Materialize para JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!-- Link para firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCN56nwJ-HRhJNQsXaquVsNgFLIAU_cQ_0",
+        authDomain: "proyecto-final-8b8d1.firebaseapp.com",
+        databaseURL: "https://proyecto-final-8b8d1.firebaseio.com",
+        projectId: "proyecto-final-8b8d1",
+        storageBucket: "proyecto-final-8b8d1.appspot.com",
+        messagingSenderId: "608555465261"
+      };
+      firebase.initializeApp(config);
+    </script>
+   
+    
+    <script src="../scl-2018-01-ProyectoFinalCore/assets/js/opcionEmpresa.js"></script>
+</body>
+
+</html>

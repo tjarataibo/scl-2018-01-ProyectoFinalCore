@@ -1,16 +1,16 @@
 input {
     background-color: aliceblue;
 }
-.parallax-container .parallax img {
+/* .parallax-container .parallax img {
     opacity: 1 !important;
-}
+} */
 
 
 /* .parallax{
     position:static;
   } */
 
-.parallax{ z-index: 0; }
+/* .parallax{ z-index: 0; } */
 
 /* .containerTwo{
     margin-left : 500px;
@@ -18,7 +18,7 @@ input {
 } */
 
 .container{
-	 box-sizing: border-box;
+	box-sizing: border-box;
     margin: 0;
     padding: 0;
     max-width: 1000px;
