@@ -34,7 +34,7 @@ form.addEventListener('submit', (e) => {
     })  
    
 function paraIrALogin() {
-    location.href = "alerta.html"
+    location.href = "../scl-2018-01-ProyectoFinalCore/alerta.html"
 }
 
 var video = document.querySelector('#camera-stream'),
