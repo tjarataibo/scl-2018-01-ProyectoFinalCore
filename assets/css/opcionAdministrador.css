@@ -1,0 +1,10 @@
+.parallax-container .parallax img {
+    opacity: 1 !important;
+}
+
+
+/* .parallax{
+    position:static;
+  } */
+
+.parallax{ z-index: 0; }
