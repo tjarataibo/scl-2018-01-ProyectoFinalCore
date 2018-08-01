@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
     <link rel="stylesheet" href="../scl-2018-01-ProyectoFinalCore/assets/css/registro.css">
-    <title>Protipo</title>
+     <!-- Link Materialize para css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Link para íconos -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Link Google Fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.css" />
+     <title>Registro Empresas</title>
 </head>
-
 <body>
+
+        <header class="container center" id="titulo">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <h3><strong>Registro Visitas</strong></h3>
+                    </div>
+                </div>  
+        </header> 
     <div class="content"></div>
 
     <section class="container">
@@ -90,23 +104,28 @@
 
     </div>
     <ul id="data-list"></ul>
-    <script>
+    
+      <!-- Link Jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Link Materialize para JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+      <!-- Link para firebase-->
+      <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+      <script>
         // Initialize Firebase
         var config = {
-            apiKey: "AIzaSyCN56nwJ-HRhJNQsXaquVsNgFLIAU_cQ_0",
-            authDomain: "proyecto-final-8b8d1.firebaseapp.com",
-            databaseURL: "https://proyecto-final-8b8d1.firebaseio.com",
-            projectId: "proyecto-final-8b8d1",
-            storageBucket: "proyecto-final-8b8d1.appspot.com",
-            messagingSenderId: "608555465261"
+          apiKey: "AIzaSyCN56nwJ-HRhJNQsXaquVsNgFLIAU_cQ_0",
+          authDomain: "proyecto-final-8b8d1.firebaseapp.com",
+          databaseURL: "https://proyecto-final-8b8d1.firebaseio.com",
+          projectId: "proyecto-final-8b8d1",
+          storageBucket: "proyecto-final-8b8d1.appspot.com",
+          messagingSenderId: "608555465261"
         };
         firebase.initializeApp(config);
-        const db = firebase.firestore();
-        db.settings({ timestampsInSnapShots: true });
-
-    </script>
-    <script src="../scl-2018-01-ProyectoFinalCore/assets/js/registro.js"></script>
-    <script src="assets/js/foto.js"></script>
-</body>
-
-</html>
+      </script>
+     
+      
+      <script src="../scl-2018-01-ProyectoFinalCore/assets/js/registro.js"></script>
+  </body>
+  
+  </html>
