@@ -1,4 +1,4 @@
-/*let button = document.getElementById("button");
+let button = document.getElementById("elestudio");
 
 button.addEventListener("click", function(){
     notify();
@@ -29,7 +29,8 @@ let properties = {
 
 }
 
-//Funcionalidad Parallax
+
+/*//Funcionalidad Parallax
 $(document).ready(function(){
     $('.parallax').parallax();
   }); */

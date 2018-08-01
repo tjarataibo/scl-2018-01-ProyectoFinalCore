@@ -234,7 +234,7 @@ function hideUI() {
 
 
 
-ar db = firebase.firestore();
+ db = firebase.firestore();
 const formulario = document.getElementById('formulario');
 
 formulario.addEventListener('submit', e =>  {
@@ -256,7 +256,7 @@ formulario.addEventListener('submit', e =>  {
                Rut: cedula,
                Telefono: telefono,
                Patente: patente,
-               Correo: correo 
+               Correo: correo, 
                Contraseña: contraseña 
             })
             console.log('ya envie los datos');
