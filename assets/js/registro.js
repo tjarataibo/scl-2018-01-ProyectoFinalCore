@@ -23,8 +23,7 @@ form.addEventListener('submit', (e) => {
         rut: form.rut.value,
         telefono: form.tlf.value,
         patente: form.patente.value
-    })
-    
+	}); 
     // para mantener limpio los input luego de haber enviado los datos
     form.nombre.value = '';
     form.email.value = '';
@@ -33,9 +32,9 @@ form.addEventListener('submit', (e) => {
     form.patente.value = '';
     })  
    
-function paraIrALogin() {
-    location.href = "../scl-2018-01-ProyectoFinalCore/alerta.html"
-}
+// function paraIrALogin() {
+//     location.href = "../scl-2018-01-ProyectoFinalCore/alerta.html"
+// }
 
 var video = document.querySelector('#camera-stream'),
 	image = document.querySelector('#snap'),
